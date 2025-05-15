@@ -1,8 +1,9 @@
 using namespace std;
 #include <iostream>
+#include <sstream>
 
-string func(string n) {
-    string d = "";
+string func(const string& n) {
+    ostringstream d;
     int i = 0;
     while (i < n.length()) {
         char rest = n[i];
@@ -11,10 +12,9 @@ string func(string n) {
             count++;
             i++;
         }
-        d += to_string(count);
-        d += rest;
+        d << count << rest;
     }
-    return d;
+    return d.str();
 }
 
 
@@ -22,16 +22,11 @@ string func(string n) {
 class Solution {
     public:
         string countAndSay(int n) {
-            if (n == 1){
-                return "1";
-            }
-            else{
                 string dd = "1";
                 for (int d = 1; d < n; d++){
                     dd = func(dd);
                 }
                 return dd;
-            }
         }
 };
 
