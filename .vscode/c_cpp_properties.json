@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Users/mateu/Desktop/MinGW/include",
+                "C:/Users/mateu/Desktop/MinGW/lib/gcc/x86_64-w64-mingw32/13.2.0/include",
+                "C:/Users/mateu/Desktop/MinGW/lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed"
+            ],
+            "defines": [],
+            "compilerPath": "C:/Users/mateu/Desktop/MinGW/bin/g++.exe",
+            "intelliSenseMode": "gcc-x64",
+            "cppStandard": "c++17",
+            "cStandard": "c11"
+        }
+    ],
+    "version": 4
+}
